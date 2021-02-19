@@ -4,9 +4,8 @@ CXX = g++
 #VERSION = @VERSION@
 #CFLAGS = @CFLAGS@
 
-DEBUGFLAGS = -g -O0 -m32 -DDEBUG
+DEBUGFLAGS = -g -O0 -DDEBUG
 
-# Note:  -m32 is to allow using Valgrind (which doesn't work on 64-bit exes)
 CXXFLAGS = -fpic $(DEBUGFLAGS)
 
 #CXXFLAGS = $(CXXFLAGS) -DMALLOC_CHECK_=1
