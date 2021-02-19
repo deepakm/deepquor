@@ -122,12 +122,12 @@ qSearcher::think
 qMove
 qSearcher::search
 (qPlayer player2move,
- guint8 max_complexity,
- guint8 min_depth,
- guint8 min_breadth,
- guint8 slop,
- gint32 max_time,
- gint32 suggested_time)
+ guint16 max_complexity,
+ guint8  min_depth,
+ guint8  min_breadth,
+ guint8  slop,
+ gint32  max_time,
+ gint32  suggested_time)
 {
   qMove move;
 
@@ -171,7 +171,7 @@ qSearcher::applyMove
 qMove
 qSearcher::iSearch
 (qPlayer player2move,
- guint8  max_complexity,
+ guint16 max_complexity,
  guint8  min_depth,
  guint8  min_breadth,
  guint8  slop,

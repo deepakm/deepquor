@@ -45,7 +45,7 @@ public:
   //   max_time: thinking time, in milliseconds.  0 = no time limit
   //   suggested_time: thinking time, in milliseconds.  0 = no limit
   qMove search(qPlayer player2move,     // Which player to find a move for
-	       guint8  max_complexity,  // keep thinking until below
+	       guint16 max_complexity,  // keep thinking until below
 	       guint8  min_depth,       // keep thinking until beyond
 	       guint8  min_breadth,     // brute force search this many plies
 	       guint8  slop,            // don't need to refine beyond this
@@ -71,7 +71,7 @@ private:
 
   // Internal search routine used by both search() and background searches
   qMove iSearch(qPlayer player2move,     // Which player to find a move for
-		guint8  max_complexity,  // keep thinking until below
+		guint16 max_complexity,  // keep thinking until below
 		guint8  min_depth,       // keep thinking until beyond
 		guint8  min_breadth,     // brute force search this many plies
 		guint8  slop,            // don't need to refine beyond this
